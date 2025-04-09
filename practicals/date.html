@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Display - Khizar Shah</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="practical-container">
+        <div class="practical-content">
+            <h1 class="practical-title">Today's Date</h1>
+
+            <div class="date-display">
+                <p id="date">Loading date...</p>
+            </div>
+
+            <div class="info-box">
+                <h2 class="practical-subtitle">About This Practical</h2>
+                <p>
+                    This page demonstrates a simple JavaScript implementation to display the current date. 
+                    The script uses the built-in Date object to get the current date and formats it using 
+                    toLocaleDateString() with options for a more readable format.
+                </p>
+            </div>
+
+            <div class="code-box">
+                <h3 class="code-title">JavaScript Code:</h3>
+                <pre class="code-block">
+const date = new Date();
+const options = { 
+  weekday: 'long', 
+  year: 'numeric', 
+  month: 'long', 
+  day: 'numeric' 
+};
+const formattedDate = date.toLocaleDateString('en-US', options);
+document.getElementById('date').textContent = formattedDate;
+                </pre>
+            </div>
+
+            <div class="text-center">
+                <a href="../index.html" class="btn btn-secondary">Back to Portfolio</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/date.js"></script>
+</body>
+</html>

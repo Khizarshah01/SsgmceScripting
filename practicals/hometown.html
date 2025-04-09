@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hometown - Khizar Shah</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Internal CSS for hometown page */
+        body {
+            background-color: #f0f8ff;
+            color: #333366;
+            font-family: Georgia, serif;
+        }
+        
+        .hometown-title {
+            color: #1a3c6e;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hometown-image {
+            border: 5px solid #1a3c6e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        
+        .info-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .info-card.left-border {
+            border-left: 4px solid #1a3c6e;
+        }
+        
+        .info-card.top-border {
+            border-top: 4px solid #1a3c6e;
+        }
+        
+        .card-title {
+            color: #1a3c6e;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .card-subtitle {
+            color: #1a3c6e;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .two-column-list {
+            column-count: 2;
+            column-gap: 2rem;
+            list-style-position: inside;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .landmark-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .landmark-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="hometown-title">Welcome to Khamgaon</h1>
+
+        <div class="text-center">
+            <img src="../images/khamgaon.jpg" alt="Khamgaon City View" class="hometown-image" onerror="this.src='https://via.placeholder.com/800x400?text=Khamgaon+-+444303'">
+            <p class="image-caption">The beautiful city of Khamgaon - 444303</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="info-card left-border">
+                <h2 class="card-title">About Khamgaon</h2>
+                <p>Khamgaon is a city and municipal council in Buldhana district in the state of Maharashtra, India. It is located in the Vidarbha region and is known for its agricultural importance, particularly for cotton production. The city has a rich cultural heritage and is home to many historical sites.</p>
+                <p>With a population of approximately 100,000 people, Khamgaon serves as an important commercial center for the surrounding rural areas. The city is well-connected by road and rail to major cities in Maharashtra.</p>
+            </div>
+
+            <div class="info-card left-border">
+                <h2 class="card-title">History & Culture</h2>
+                <p>Khamgaon has a rich historical background dating back several centuries. The region has been under the rule of various dynasties including the Mughals, Marathas, and later the British.</p>
+                <p>The culture of Khamgaon is a blend of traditional Maharashtrian customs with influences from Vidarbha region. The city celebrates various festivals with great enthusiasm, including Ganesh Chaturthi, Diwali, and Holi. The local language is Marathi, with many people also speaking Hindi.</p>
+            </div>
+        </div>
+
+        <div class="info-card top-border">
+            <h2 class="card-title text-center">Famous Landmarks</h2>
+
+            <div class="landmark-grid">
+                <div>
+                    <h3 class="card-subtitle">Shani Temple</h3>
+                    <p>A historic temple dedicated to Lord Shani that attracts many devotees from surrounding areas.</p>
+                </div>
+
+                <div>
+                    <h3 class="card-subtitle">Gandhi Chowk</h3>
+                    <p>The central marketplace and heart of the city where locals gather for shopping and socializing.</p>
+                </div>
+
+                <div>
+                    <h3 class="card-subtitle">SSGMCE Campus</h3>
+                    <p>Shri Sant Gajanan Maharaj College of Engineering, a prestigious educational institution in the region.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-card top-border">
+            <h2 class="card-title text-center">Local Cuisine</h2>
+            <p class="text-center">Khamgaon offers a variety of delicious local Maharashtrian dishes. Some must-try foods include:</p>
+
+            <ul class="two-column-list">
+                <li>Poha - Flattened rice dish popular for breakfast</li>
+                <li>Vada Pav - A popular street food</li>
+                <li>Puran Poli - Sweet flatbread</li>
+                <li>Misal Pav - Spicy sprouts curry with bread</li>
+                <li>Saoji Cuisine - Known for its spicy flavor</li>
+                <li>Modak - Sweet dumplings</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <a href="../index.html" class="btn btn-secondary">Back to Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>

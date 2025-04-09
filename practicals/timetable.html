@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class Timetable - Practical 3</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #4a148c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .timetable-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4a148c;
+      color: white;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .break {
+      background-color: #e1bee7;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Class Timetable</h1>
+  </header>
+
+  <div class="container">
+    <a href="../index.html#practicals" class="back-link">← Back to Portfolio</a>
+
+    <div class="timetable-container">
+      <h2>Computer Science Engineering - Semester IV</h2>
+      <p>Academic Year 2024-2025 (Spring)</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:00 AM - 12:00 PM</td>
+            <td>TOC (CMM)</td>
+            <td>AI (RAZ)</td>
+            <td>AI (RAZ)</td>
+            <td>AI (RAZ)</td>
+            <td>DCN (KPS)</td>
+            <td rowspan="3">Skill Development Program</td>
+          </tr>
+          <tr>
+            <td>12:00 PM - 01:00 PM</td>
+            <td>DCN (KPS)</td>
+            <td>M&ALP (RSM)</td>
+            <td>M&ALP (RSM)</td>
+            <td>M&ALP (RSM)</td>
+            <td>ENVS (RMK)</td>
+          </tr>
+          <tr>
+            <td>01:00 PM - 01:15 PM</td>
+            <td class="break" colspan="5">Break</td>
+          </tr>
+          <tr>
+            <td>01:15 PM - 02:15 PM</td>
+            <td colspan="5">OS(A)/DCN(B)/M&ALP(C)/C SKILL(D)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>02:15 PM - 03:15 PM</td>
+            <td colspan="5">PKB / KPS / RSM / SBP</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>03:15 PM - 03:45 PM</td>
+            <td colspan="5" class="break">Recess</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>03:45 PM - 04:45 PM</td>
+            <td>Skill Development Program</td>
+            <td>TOC(T) (CMM)</td>
+            <td>OS (PKB)</td>
+            <td>OS (PKB)</td>
+            <td>TOC (CMM)</td>
+            <td>Skill Development Program</td>
+          </tr>
+          <tr>
+            <td>04:45 PM - 05:45 PM</td>
+            <td></td>
+            <td>Skill Development Program</td>
+            <td>DCN (KPS)</td>
+            <td>ENVS (RMK)</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>08:30 AM - 09:30 AM</td>
+            <td colspan="6">OS(D)/DCN(A)/M&ALP(B)/C SKILL(C)</td>
+          </tr>
+          <tr>
+            <td>09:30 AM - 10:30 AM</td>
+            <td colspan="6">PKB / KPS / RSM / SBP</td>
+          </tr>
+          <tr>
+            <td>10:30 AM - 10:45 AM</td>
+            <td colspan="6" class="break">Break</td>
+          </tr>
+          <tr>
+            <td>10:45 AM - 11:45 AM</td>
+            <td colspan="6">OS(D)/DCN(A)/M&ALP(B)/C SKILL(C)</td>
+          </tr>
+          <tr>
+            <td>11:45 AM - 12:45 PM</td>
+            <td colspan="6">PKB / KPS / RSM / SBP</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Subject & Faculty</h3>
+      <ul>
+        <li><strong>4KS01 - Artificial Intelligence</strong>: Dr. R. A. Zamare</li>
+        <li><strong>4KS02 - Data Communication & Networking</strong>: Prof. Ms. K. P. Sable</li>
+        <li><strong>4KS03 - Operating System</strong>: Dr. P. K. Bharne</li>
+        <li><strong>4KS04 - Microprocessor & Assembly Language Programming</strong>: Dr. R. S. Mahamune</li>
+        <li><strong>4KS05 - Theory of Computation</strong>: Prof. C. M. Mankar</li>
+        <li><strong>4ES06 - Environmental Studies</strong>: Dr. R. M. Kharate</li>
+      </ul>
+
+      <h3>Practicals</h3>
+      <ul>
+        <li><strong>4KS06 - DCN Lab</strong>: OOP Lab Section II</li>
+        <li><strong>4KS07 - OS Lab</strong>: OOP Lab Section I</li>
+        <li><strong>4KS08 - M&ALP Lab</strong>: DBMS Lab Section II</li>
+        <li><strong>4KS09 - C Skill – II Lab</strong>: DBMS Lab Section I</li>
+      </ul>
+
+      <div class="notes">
+        <h3>Important Notes:</h3>
+        <ul>
+          <li>Classes begin promptly at the scheduled time. Please be punctual.</li>
+          <li>Laboratory sessions require proper lab attire and safety equipment.</li>
+          <li>Attendance is mandatory for all classes and labs.</li>
+          <li>This timetable is subject to change. Any modifications will be communicated via email.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Srujal Audarya | Practical 3: Class Timetable</p>
+  </footer>
+</body>
+</html>
